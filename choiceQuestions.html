@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>教师创建调查问卷</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap-table.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/docs.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/purple.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style/queSystem.css">
+	<script type="text/javascript" src="Js/jquery.min.js"></script>
+	<script type="text/javascript" src="Js/json2.js"></script>
+	<script type="text/javascript" src="Js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="Js/tooltip.js"></script>
+	<script type="text/javascript" src="Js/icheck.min.js"></script>
+	<!-- <script type="text/javascript" src="Js/Interaction/queSystem.js"></script> -->
+	<script type="text/javascript" src="Js/Interaction/questions.js"></script>
+	<script type="text/javascript" src="Js/Interaction/radioICheck.js"></script>
+</head>
+<body>
+	<!-- 用一个总的div包含，便于iframe控制父窗口时能够清空 -->
+	<div id="iframe_control">
+		<!-- 头部信息 -->
+		<div class="bs-docs-header" id="content" tabindex="-1">
+			<div class="container">
+				<h1>计算机导论问卷调查</h1>
+				<p>教师在此完成问卷题目的创建</p>
+			</div>
+		</div>
+		<!-- 主题部分内容 -->
+		<div class="container bs-docs-container">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-8" role="main">
+					<div class="bs-docs-section">
+						<h1 id="establish" class="page-header">创建问卷</h1>
+						<button class="btn btn-primary" type="button" id="createButton">点此创建</button>
+						<form>
+							<div id="topic_1">
+								<h4>1.“大煮干丝”是哪个菜系的代表菜之一?</h4>
+								<div class="row">
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck1" id="topic_1_A" value="">
+											<label for="topic_1_A"></label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck1" id="topic_1_B" value="">
+											<label for="topic_1_B"></label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck1" id="topic_1_C" value="">
+											<label for="topic_1_C"></label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck1" id="topic_1_D" value="">
+											<label for="topic_1_D"></label>
+										</div>
+									</div>
+									<div class="col-sm-4"></div>
+								</div>
+							</div>
+							<div id="topic_2">
+								<h4>2. 红茶属于什么茶？</h4>
+								<div class="row">
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck2" id="topic_2_A" value="">
+											<label for="topic_2_A">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck2" id="topic_2_B" value="">
+											<label for="topic_2_B">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck2" id="topic_2_C" value="">
+											<label for="topic_2_C">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck2" id="topic_2_D" value="">
+											<label for="topic_2_D">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-4"></div>
+								</div>
+							</div>
+							<div id="topic_3">
+								<h4>3. 满汉全席起兴于哪个朝代</h4>
+								<div class="row">
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck3" id="topic_3_A" value="">
+											<label for="topic_3_A">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck3" id="topic_3_B" value="">
+											<label for="topic_3_B">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck3" id="topic_3_C" value="">
+											<label for="topic_3_C">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck3" id="topic_3_D" value="">
+											<label for="topic_3_D">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-4"></div>
+								</div>
+							</div>
+							<div id="topic_4">
+								<h4>4. 满汉全席起兴于哪个朝代</h4>
+								<div class="row">
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck4" id="topic_4_A" value="">
+											<label for="topic_4_A">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck4" id="topic_4_B" value="">
+											<label for="topic_4_B">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck4" id="topic_4_C" value="">
+											<label for="topic_4_C">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck4" id="topic_4_D" value="">
+											<label for="topic_4_D">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-4"></div>
+								</div>
+							</div>
+							<div id="topic_5">
+								<h4>5. 满汉全席起兴于哪个朝代</h4>
+								<div class="row">
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck5" id="topic_5_A" value="">
+											<label for="topic_5_A">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck5" id="topic_5_B" value="">
+											<label for="topic_5_B">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck5" id="topic_5_C" value="">
+											<label for="topic_5_C">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck5" id="topic_5_D" value="">
+											<label for="topic_5_D">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-4"></div>
+								</div>
+							</div>
+							<div id="topic_6">
+								<h4>6. 满汉全席起兴于哪个朝代</h4>
+								<div class="row">
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck6" id="topic_6_A" value="">
+											<label for="topic_6_A">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck6" id="topic_6_B" value="">
+											<label for="topic_6_B">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck6" id="topic_6_C" value="">
+											<label for="topic_6_C">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck6" id="topic_6_D" value="">
+											<label for="topic_6_D">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-4"></div>
+								</div>
+							</div>
+							<div id="topic_7">
+								<h4>7. 满汉全席起兴于哪个朝代</h4>
+								<div class="row">
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck7" id="topic_7_A" value="">
+											<label for="topic_7_A">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck7" id="topic_7_B" value="">
+											<label for="topic_7_B">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck7" id="topic_7_C" value="">
+											<label for="topic_7_C">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="radio">
+											<input type="radio" name="iCheck7" id="topic_7_D" value="">
+											<label for="topic_7_D">山东菜系</label>
+										</div>
+									</div>
+									<div class="col-sm-4"></div>
+								</div>
+							</div>
+							<p class="commentBox">留言框</p>
+							<textarea class="form-control" rows="3"></textarea>
+							<button type="submit" class="btn btn-primary btn-block" id="btn-set">提&nbsp;交</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-3" role="complementary"></div>
+			</div>
+		</div>
+		<!-- 尾部信息 -->
+		<footer class="bs-docs-footer" role="contentinfo">
+			<div class="container container_footer">
+				<ul class="bs-docs-footer-links">
+					<li class="about_link">
+						<a href="#">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a>|
+					</li>
+					<li class="about_link">
+						<a href="#">章节目录</a>|
+					</li>
+					<li class="about_link">
+						<a href="#">课后实验</a>|
+					</li>
+					<li class="about_link">
+						<a href="#">在线留言</a>|
+					</li>
+					<li class="about_link">
+						<a href="#">关于我们</a>
+					</li>
+				</ul>
+				<p>武汉理工大学计算机与科学技术学院 地址：湖北省武汉市武汉理工大学 邮编：430070 2012-2015</p>
+				<p>Copyright ©computingdream.com</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

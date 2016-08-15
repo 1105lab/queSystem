@@ -1,0 +1,58 @@
+/* 头部适应不同屏幕的样式 */
+header.nav-border {
+	border-bottom: 1px solid #ddd;
+}
+.navbar .button a {
+    height: 49px;
+    line-height: 49px;
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    border-left: 1px solid #ddd;
+}
+
+/* 重写container-fluid的部分属性 */
+.container-fluid {
+	padding: 0px;
+}
+
+/* 创建问卷选择题按钮 */
+#createButton {
+	float: left;
+    margin-top: -66px;
+    margin-left: 150px;
+}
+
+/* 选项内容样式*/
+label {
+	margin-left: -17px;
+	vertical-align: middle;
+	font-family: 'Microsoft Yahei';
+	font-size: 15px;
+}
+
+/* 重写btn-block属性 */
+button#btn-set {
+	width: 50% !important;
+	margin: 20px auto -45px auto;
+	font-family: 'Microsoft Yahei';
+	font-size: 18px;
+}
+
+/* 留言框 */
+p.commentBox {
+	margin-top: 5px;
+	margin-bottom: 0px;
+	font-family: 'Microsoft Yahei';
+	font-size: 18px;
+}
+
+/* 底部链接按钮 */
+footer .container_footer {
+	margin-top: -40px;
+}
+footer ul .about_link a {
+	margin-right: 10px;
+	font-family: 'Microsoft Yahei';
+	font-size: 16px;
+}
